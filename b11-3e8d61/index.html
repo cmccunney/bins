@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta name="referrer" content="no-referrer">
+<title>Bin 11 — Natalie</title>
+<style>html{color-scheme:light dark}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#edeeef; --card:#f9fafa; --sunk:#e2e5e6;
+    --ink:#15181a; --ink-2:#4d555a; --ink-3:#828b90;
+    --rule:#d5d9db; --rule-2:#c4cacd;
+    --accent:#0f5c4f; --accent-soft:#dcebe7; --accent-line:#9cc8bd;
+    --muted:#8d7a52; --muted-soft:#f0ead9; --muted-line:#d5c9a6;
+    --shadow:0 1px 2px rgba(16,24,28,.06), 0 6px 18px rgba(16,24,28,.07);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#131617; --card:#1b1f21; --sunk:#232829;
+      --ink:#eaeeef; --ink-2:#a5aeb3; --ink-3:#788287;
+      --rule:#2b3133; --rule-2:#3a4143;
+      --accent:#54c1a7; --accent-soft:#142e29; --accent-line:#2b5f54;
+      --muted:#c4ab77; --muted-soft:#2c2617; --muted-line:#55492c;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#131617; --card:#1b1f21; --sunk:#232829;
+    --ink:#eaeeef; --ink-2:#a5aeb3; --ink-3:#788287;
+    --rule:#2b3133; --rule-2:#3a4143;
+    --accent:#54c1a7; --accent-soft:#142e29; --accent-line:#2b5f54;
+    --muted:#c4ab77; --muted-soft:#2c2617; --muted-line:#55492c;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground);color:var(--ink);margin:0;
+    font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;
+    padding-block:0 44px;padding-left:16px;padding-right:16px;
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+
+  /* ---------- masthead ---------- */
+  header{padding-block:26px 20px;border-bottom:2px solid var(--ink);margin-bottom:22px}
+  .binline{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:12px}
+  .bintag{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;letter-spacing:.1em;
+    background:var(--ink);color:var(--ground);padding:4px 9px;border-radius:2px;
+  }
+  .ctr{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);letter-spacing:.08em}
+  h1{
+    font-size:clamp(38px,12vw,68px);font-weight:600;letter-spacing:-.035em;
+    line-height:.95;margin:0 0 10px;text-wrap:balance;
+  }
+  .sub{
+    font-family:"IBM Plex Mono",monospace;font-size:clamp(12px,3.4vw,15px);
+    font-weight:500;letter-spacing:.1em;color:var(--ink-2);text-transform:uppercase;
+  }
+  .tally{
+    margin-top:14px;display:flex;flex-wrap:wrap;gap:6px 8px;
+  }
+  .pill{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.04em;
+    padding:4px 9px;border-radius:2px;border:1px solid var(--rule-2);
+    background:var(--card);color:var(--ink-2);
+  }
+  .pill b{font-weight:600;color:var(--ink)}
+  .pill.warn{background:var(--muted-soft);border-color:var(--muted-line);color:var(--muted)}
+  .pill.warn b{color:var(--muted)}
+
+  /* ---------- grid ---------- */
+  .grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+    gap:14px;margin:0;padding:0;list-style:none;
+  }
+  @media (min-width:620px){.grid{grid-template-columns:repeat(auto-fill,minmax(196px,1fr));gap:18px}}
+
+  .item{display:flex;flex-direction:column;gap:0;background:var(--card);
+        border:1px solid var(--rule);border-radius:3px;overflow:hidden;box-shadow:var(--shadow)}
+  .shot{
+    display:block;width:100%;aspect-ratio:3/4;border:0;padding:0;margin:0;
+    background:var(--sunk);cursor:zoom-in;position:relative;overflow:hidden;
+  }
+  .shot img{width:100%;height:100%;object-fit:cover;display:block;max-width:100%}
+  .shot:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+  .noshot{
+    aspect-ratio:3/4;background:var(--sunk);display:flex;align-items:center;justify-content:center;
+    border-bottom:1px solid var(--rule);
+  }
+  .noshot span{
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+    color:var(--ink-3);text-transform:uppercase;text-align:center;padding:0 12px;line-height:1.7;
+  }
+  .meta{padding:10px 11px 12px;display:flex;flex-direction:column;gap:3px;flex:1}
+  .code{
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;
+    letter-spacing:.1em;color:var(--accent);
+  }
+  .nm{font-size:13px;line-height:1.35;color:var(--ink);font-weight:500}
+  .kind{
+    font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;
+    color:var(--ink-3);text-transform:uppercase;margin-top:auto;padding-top:6px;
+  }
+  .item.odd .code{color:var(--muted)}
+
+  /* ---------- section rules ---------- */
+  .band{
+    display:flex;align-items:center;gap:12px;margin:30px 0 15px;
+  }
+  .band:first-of-type{margin-top:0}
+  .band h2{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);margin:0;white-space:nowrap;
+  }
+  .band .line{flex:1;height:1px;background:var(--rule-2)}
+  .band .n{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+  /* ---------- lightbox ---------- */
+  #lb{
+    position:fixed;inset:0;background:rgba(8,10,11,.94);z-index:50;
+    display:none;align-items:center;justify-content:center;padding:16px;
+  }
+  #lb.on{display:flex}
+  #lb img{max-width:100%;max-height:78vh;object-fit:contain;border-radius:2px;display:block}
+  .lbin{display:flex;flex-direction:column;gap:12px;align-items:center;max-width:760px;width:100%}
+  .lbcap{
+    font-family:"IBM Plex Mono",monospace;font-size:12px;color:#d9dee0;
+    letter-spacing:.05em;text-align:center;line-height:1.6;
+  }
+  .lbcap b{display:block;color:#7fd3bd;font-weight:600;margin-bottom:3px}
+  .lbnav{display:flex;gap:10px;justify-content:center}
+  .lbnav button, #lbx{
+    font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;cursor:pointer;
+    background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);
+    color:#e8ecee;border-radius:2px;padding:9px 18px;
+  }
+  .lbnav button:hover,#lbx:hover{background:rgba(255,255,255,.17)}
+  #lbx{position:absolute;top:14px;right:14px;padding:8px 13px}
+
+  /* ---------- footer ---------- */
+  footer{
+    margin-top:38px;padding-top:20px;border-top:1px solid var(--rule);
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.8;color:var(--ink-3);
+    display:flex;flex-direction:column;gap:10px;
+  }
+  footer a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-line)}
+  footer a:hover{border-bottom-color:var(--accent)}
+  .caveat{
+    background:var(--muted-soft);border:1px solid var(--muted-line);color:var(--muted);
+    border-radius:2px;padding:11px 13px;font-size:11.5px;line-height:1.65;letter-spacing:.01em;
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="binline">
+      <span class="bintag">BIN 11</span>
+      <span class="ctr">CTR-024 · STORAGE AREA</span>
+    </div>
+    <h1>Natalie</h1>
+    <div class="sub">Bags &middot; Backpacks &middot; Reusable Totes</div>
+    <div class="tally">
+      <span class="pill"><b>19</b> rows</span>
+      <span class="pill"><b>WR-018</b> – <b>WR-036</b></span>
+      <span class="pill"><b>16</b> photographed</span>
+      <span class="pill warn"><b>1</b> count unconfirmed</span>
+    </div>
+  </header>
+
+  <div class="band"><h2>Backpacks</h2><span class="line"></span><span class="n" id="nFoot"></span></div>
+  <ul class="grid" id="gFoot"></ul>
+
+  <div class="band"><h2>Bags &amp; Totes</h2><span class="line"></span><span class="n" id="nBags"></span></div>
+  <ul class="grid" id="gBags"></ul>
+
+  <div class="band"><h2>Reusable &amp; Folding</h2><span class="line"></span><span class="n" id="nOther"></span></div>
+  <ul class="grid" id="gOther"></ul>
+
+  <footer>
+    <div class="caveat">
+      A snapshot generated from Notion, not the record itself. If it disagrees with
+      <a href="https://app.notion.com/3da81e12708b812f9ac3fc9655564fc5">CTR-024</a>, Notion wins.
+      Two things are unconfirmed: the reusable-bag total (Cory said "probably ten"; nine units are
+      logged individually, so WR-036 carries a placeholder of 2), and what WR-028 actually is.
+      Condition reads OK across the board and was not checked against the photos.
+    </div>
+    <div>Photographed 13 Sep 2026 · Source of truth: <a href="https://app.notion.com/3da81e12708b812f9ac3fc9655564fc5">Inventory — Containers / CTR-024</a></div>
+  </footer>
+</div>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button id="lbx" type="button">Close ✕</button>
+  <div class="lbin">
+    <img id="lbimg" alt="">
+    <div class="lbcap" id="lbcap"></div>
+    <div class="lbnav">
+      <button type="button" id="lbprev">← Prev</button>
+      <button type="button" id="lbnext">Next →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var ITEMS = [
+    {id:"WR-018", nm:"Backpack — Air Jordan, black nylon, Jumpman logo", ph:"IMG_2512.jpg", g:"foot", k:"Jordan"},
+    {id:"WR-019", nm:"Laptop backpack — black with red trim", ph:"IMG_2514.jpg", g:"foot", k:"Swissgear"},
+    {id:"WR-020", nm:"Backpack — Cuphead allover character print", ph:"IMG_2515.jpg", g:"foot", k:"Kid-sized"},
+    {id:"WR-021", nm:"Backpack — black canvas, tan round leather patch", ph:"IMG_2503.jpg", g:"foot", k:"Brand unread"},
+
+    {id:"WR-022", nm:"Tote — pale blue/grey smooth faux leather", ph:"IMG_2502.jpg", g:"bags", k:"Tote"},
+    {id:"WR-023", nm:"Quilted tote — teal/grey floral", ph:"IMG_2513.jpg", g:"bags", k:"Quilted"},
+    {id:"WR-024", nm:"Quilted bag — grey/black abstract, drawstring", ph:"IMG_2506.jpg", g:"bags", k:"Quilted"},
+    {id:"WR-025", nm:"Tote — Animal Crossing, cream canvas with zip", ph:"IMG_2507.jpg", g:"bags", k:"Nintendo"},
+    {id:"WR-026", nm:"Tote — Island Wing Company, natural canvas", ph:"IMG_2505.jpg", g:"bags", k:"Promo canvas"},
+    {id:"WR-027", nm:"Beach tote — lemon print mesh, yellow trim", ph:"IMG_2500.jpg", g:"bags", k:"May be insulated"},
+    {id:"WR-028", nm:"Soft-sided zip case — taupe with white piping", ph:"IMG_2511.jpg", g:"bags", k:"Purpose unconfirmed"},
+
+    {id:"WR-029", nm:"Reusable tote — Commit To Action, blue (×2)", ph:"IMG_2501.jpg", g:"other", k:"Two of these"},
+    {id:"WR-030", nm:"Reusable tote — Happy Howl-oween, skeleton pug", ph:"IMG_2508.jpg", g:"other", k:"Seasonal"},
+    {id:"WR-031", nm:"Reusable tote — Let Go & Have Fun, blue", ph:"IMG_2509.jpg", g:"other", k:"Tag still on"},
+    {id:"WR-032", nm:"Reusable tote — pink, white dog with red heart", ph:"IMG_2510.jpg", g:"other", k:"Reusable"},
+    {id:"WR-033", nm:"Folding tote — watermelon print", ph:"IMG_2516.jpg", g:"other", k:"In the bin shot"},
+    {id:"WR-034", nm:"Folding tote — rainbow gradient, reflective strip", ph:"IMG_2516.jpg", g:"other", k:"In the bin shot"},
+    {id:"WR-035", nm:"Folding tote — Sam's Club, geometric print", ph:"IMG_2516.jpg", g:"other", k:"In the bin shot"},
+    {id:"WR-036", nm:"Reusable grocery bags — remainder", ph:null, g:"other", k:"Count unconfirmed", why:"Not photographed — count in hand"}
+  ];
+
+  var shots = ITEMS.filter(function(i){ return i.ph; });
+  var idx = 0;
+
+  function card(it){
+    var li = document.createElement("li");
+    li.className = "item" + (it.id === "WR-016" ? " odd" : "");
+    if (it.ph){
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "shot";
+      b.setAttribute("aria-label", "Enlarge " + it.id + " — " + it.nm);
+      var im = document.createElement("img");
+      im.src = "photos/" + it.ph; im.alt = it.nm; im.loading = "lazy"; im.decoding = "async";
+      b.appendChild(im);
+      b.addEventListener("click", function(){ open(shots.indexOf(it)); });
+      li.appendChild(b);
+    } else {
+      var nsd = document.createElement("div");
+      nsd.className = "noshot";
+      nsd.innerHTML = '<span>' + (it.why ? esc(it.why).replace(' — ','<br>') : 'No photo<br>on file') + '</span>';
+      li.appendChild(nsd);
+    }
+    var m = document.createElement("div");
+    m.className = "meta";
+    m.innerHTML = '<span class="code">'+it.id+'</span><span class="nm"></span><span class="kind">'+esc(it.k)+'</span>';
+    m.querySelector(".nm").textContent = it.nm;
+    li.appendChild(m);
+    return li;
+  }
+
+  ["foot","bags","other"].forEach(function(g){
+    var map = {foot:["gFoot","nFoot"], bags:["gBags","nBags"], other:["gOther","nOther"]}[g];
+    var host = document.getElementById(map[0]);
+    var set = ITEMS.filter(function(i){ return i.g === g; });
+    set.forEach(function(it){ host.appendChild(card(it)); });
+    document.getElementById(map[1]).textContent = set.length + (set.length===1?" item":" items");
+  });
+
+  var lb = document.getElementById("lb"),
+      lbimg = document.getElementById("lbimg"),
+      lbcap = document.getElementById("lbcap");
+
+  function open(i){
+    if (i < 0) return;
+    idx = (i + shots.length) % shots.length;
+    var it = shots[idx];
+    lbimg.src = "photos/" + it.ph;
+    lbimg.alt = it.nm;
+    lbcap.innerHTML = "<b>" + esc(it.id) + "</b>" + esc(it.nm) + "<br>" + esc(it.ph.replace(".jpg",""));
+    lb.classList.add("on");
+    document.body.style.overflow = "hidden";
+  }
+  function close(){ lb.classList.remove("on"); document.body.style.overflow = ""; }
+
+  document.getElementById("lbx").addEventListener("click", close);
+  document.getElementById("lbprev").addEventListener("click", function(e){ e.stopPropagation(); open(idx-1); });
+  document.getElementById("lbnext").addEventListener("click", function(e){ e.stopPropagation(); open(idx+1); });
+  lb.addEventListener("click", function(e){ if (e.target === lb) close(); });
+  document.addEventListener("keydown", function(e){
+    if (!lb.classList.contains("on")) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowLeft") open(idx-1);
+    else if (e.key === "ArrowRight") open(idx+1);
+  });
+
+  function esc(s){
+    return String(s).replace(/[&<>"]/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
