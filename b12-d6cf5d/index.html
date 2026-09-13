@@ -1,0 +1,244 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive, noimageindex"><meta name="referrer" content="no-referrer"><title>Bin 12 — Natalie</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#edeeef; --card:#f9fafa; --sunk:#e2e5e6;
+  --ink:#15181a; --ink-2:#4d555a; --ink-3:#828b90;
+  --rule:#d5d9db; --rule-2:#c4cacd;
+  --accent:#0f5c4f; --accent-soft:#dcebe7; --accent-line:#9cc8bd;
+  --muted:#8d7a52; --muted-soft:#f0ead9; --muted-line:#d5c9a6;
+  --shadow:0 1px 2px rgba(16,24,28,.06), 0 6px 18px rgba(16,24,28,.07);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#131617; --card:#1b1f21; --sunk:#232829;
+    --ink:#eaeeef; --ink-2:#a5aeb3; --ink-3:#788287;
+    --rule:#2b3133; --rule-2:#3a4143;
+    --accent:#54c1a7; --accent-soft:#142e29; --accent-line:#2b5f54;
+    --muted:#c4ab77; --muted-soft:#2c2617; --muted-line:#55492c;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#131617; --card:#1b1f21; --sunk:#232829;
+  --ink:#eaeeef; --ink-2:#a5aeb3; --ink-3:#788287;
+  --rule:#2b3133; --rule-2:#3a4143;
+  --accent:#54c1a7; --accent-soft:#142e29; --accent-line:#2b5f54;
+  --muted:#c4ab77; --muted-soft:#2c2617; --muted-line:#55492c;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px rgba(0,0,0,.35);
+}
+html{color-scheme:light dark}
+*{box-sizing:border-box}
+img{max-width:100%}
+[hidden]{display:none!important}
+body{
+  background:var(--ground);color:var(--ink);margin:0;
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  padding-block:0 44px;padding-left:16px;padding-right:16px;
+}
+.wrap{max-width:1080px;margin:0 auto}
+header{padding-block:26px 20px;border-bottom:2px solid var(--ink);margin-bottom:22px}
+.binline{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:12px}
+.bintag{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;letter-spacing:.1em;background:var(--ink);color:var(--ground);padding:4px 9px;border-radius:2px}
+.ctr{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);letter-spacing:.08em}
+h1{font-size:clamp(38px,12vw,68px);font-weight:600;letter-spacing:-.035em;line-height:.95;margin:0 0 10px;text-wrap:balance}
+.sub{font-family:"IBM Plex Mono",monospace;font-size:clamp(12px,3.4vw,15px);font-weight:500;letter-spacing:.1em;color:var(--ink-2);text-transform:uppercase}
+.tally{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px 8px}
+.pill{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.04em;padding:4px 9px;border-radius:2px;border:1px solid var(--rule-2);background:var(--card);color:var(--ink-2)}
+.pill b{font-weight:600;color:var(--ink)}
+.pill.warn{background:var(--muted-soft);border-color:var(--muted-line);color:var(--muted)}
+.pill.warn b{color:var(--muted)}
+.band{display:flex;align-items:center;gap:12px;margin:32px 0 15px}
+.band h2{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);margin:0;white-space:nowrap}
+.band .line{flex:1;height:1px;background:var(--rule-2)}
+.band .n{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+.notice{background:var(--muted-soft);border:1px solid var(--muted-line);color:var(--muted);border-radius:3px;padding:14px 16px;font-size:13.5px;line-height:1.62;margin-bottom:8px}
+.notice b{font-weight:600}
+.notice + .notice{margin-top:10px}
+.list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:0;background:var(--card);border:1px solid var(--rule);border-radius:3px;overflow:hidden;box-shadow:var(--shadow)}
+@media (min-width:680px){.list{grid-template-columns:1fr 1fr}}
+.list li{padding:10px 13px;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.45;display:flex;gap:9px;align-items:baseline}
+.list li:last-child{border-bottom:0}
+@media (min-width:680px){.list li:nth-last-child(2):nth-child(odd){border-bottom:0}}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--accent-line);flex:0 0 6px;transform:translateY(-1px)}
+.list li.flag .dot{background:var(--muted-line)}
+.list li.flag{color:var(--muted)}
+.tagm{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-left:auto;padding-left:10px;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:0;padding:0;list-style:none}
+@media (min-width:620px){.grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}}
+.shot{display:block;width:100%;aspect-ratio:3/4;border:1px solid var(--rule);padding:0;margin:0;background:var(--sunk);cursor:zoom-in;overflow:hidden;border-radius:3px;box-shadow:var(--shadow);position:relative}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.shot:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.shot .fn{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(to top,rgba(8,10,11,.78),rgba(8,10,11,0));color:#e8ecee;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.06em;padding:14px 8px 6px;text-align:left}
+#lb{position:fixed;inset:0;background:rgba(8,10,11,.94);z-index:50;display:none;align-items:center;justify-content:center;padding:16px}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:78vh;object-fit:contain;border-radius:2px;display:block}
+.lbin{display:flex;flex-direction:column;gap:12px;align-items:center;max-width:760px;width:100%}
+.lbcap{font-family:"IBM Plex Mono",monospace;font-size:12px;color:#d9dee0;letter-spacing:.05em;text-align:center;line-height:1.6}
+.lbcap b{display:block;color:#7fd3bd;font-weight:600;margin-bottom:3px}
+.lbnav{display:flex;gap:10px;justify-content:center}
+.lbnav button,#lbx{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;cursor:pointer;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);color:#e8ecee;border-radius:2px;padding:9px 18px}
+.lbnav button:hover,#lbx:hover{background:rgba(255,255,255,.17)}
+#lbx{position:absolute;top:14px;right:14px;padding:8px 13px}
+footer{margin-top:38px;padding-top:20px;border-top:1px solid var(--rule);font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.8;color:var(--ink-3);display:flex;flex-direction:column;gap:10px}
+footer a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-line)}
+footer a:hover{border-bottom-color:var(--accent)}
+.caveat{background:var(--muted-soft);border:1px solid var(--muted-line);color:var(--muted);border-radius:2px;padding:11px 13px;font-size:11.5px;line-height:1.65}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style></head><body><div class="wrap">
+
+<header>
+  <div class="binline">
+    <span class="bintag">BIN 12</span>
+    <span class="ctr">CTR-025</span>
+  </div>
+  <h1>Natalie</h1>
+  <div class="sub">Shoes &middot; Boots &middot; Sandals</div>
+  <div class="tally">
+    <span class="pill"><b>18</b> photos</span>
+    <span class="pill"><b>~35–40</b> pairs</span>
+    <span class="pill warn"><b>not</b> itemised</span>
+    <span class="pill warn"><b>1</b> item to pull</span>
+  </div>
+</header>
+
+<div class="notice">
+  <b>This bin has no item rows.</b> The photos are of a full tub shot from above — shoes overlapping
+  three deep, most pairs showing one shoe and part of another. A per-pair list built from that would be
+  guesswork wearing a row ID. What is below is what can actually be read off the photos, grouped by
+  kind. To itemise properly: tip it out, lay the pairs in rows, shoot the layout plus one frame per
+  pair, and WR-037 onward gets written in a single pass.
+</div>
+<div class="notice">
+  <b>Pull the MAX EVE Nikes before this gets shelved.</b> The neon-volt pair with purple laces has
+  <i>MAX EVE</i> written across both heels in marker (IMG_2520). Eve's, or Eve-labelled for a
+  tournament — either way it is not Natalie's and it is not a shoes-bin item.
+</div>
+
+<div class="band"><h2>Sneakers &amp; Athletic</h2><span class="line"></span><span class="n">14</span></div>
+<ul class="list">
+  <li><span class="dot"></span>Nike Air Max 270 — pink &amp; light blue, gum sole</li>
+  <li><span class="dot"></span>Nike Air Max 270 — pale, gum sole</li>
+  <li><span class="dot"></span>Nike runner — cream/tan, tan laces</li>
+  <li><span class="dot"></span>Nike low — white perforated, cream waffle sole</li>
+  <li><span class="dot"></span>Nike trail shoe — yellow &amp; black, lug sole</li>
+  <li class="flag"><span class="dot"></span>Nike trainers — neon volt, purple laces<span class="tagm">MAX EVE</span></li>
+  <li><span class="dot"></span>Vans slip-ons — SpongeBob, mismatched pair<span class="tagm">Patrick / Bob</span></li>
+  <li><span class="dot"></span>adidas — cream knit, black stripes, jute midsole</li>
+  <li><span class="dot"></span>adidas — white, black stripes</li>
+  <li><span class="dot"></span>High-top — grey suede, teal stripe</li>
+  <li><span class="dot"></span>Canvas low-tops — white</li>
+  <li><span class="dot"></span>Lace-up canvas — ivory, woven pom at heel<span class="tagm">×2 pairs</span></li>
+  <li><span class="dot"></span>Chunky sneaker — white, red insole</li>
+  <li><span class="dot"></span>BOBS by Skechers — silver glitter slip-on</li>
+</ul>
+
+<div class="band"><h2>Boots</h2><span class="line"></span><span class="n">3</span></div>
+<ul class="list">
+  <li><span class="dot"></span>Ankle boot — black leather, pointed toe, ribbed stacked heel</li>
+  <li><span class="dot"></span>Bootie — black leather, side zip, block heel</li>
+  <li><span class="dot"></span>Boots — grey suede, grey knit cuff</li>
+</ul>
+
+<div class="band"><h2>Flats &amp; Dress</h2><span class="line"></span><span class="n">10</span></div>
+<ul class="list">
+  <li><span class="dot"></span>Ballet flats — blush, memory foam<span class="tagm">SO</span></li>
+  <li><span class="dot"></span>Ballet flats — tan lizard print</li>
+  <li><span class="dot"></span>Pumps — black suede, pointed toe</li>
+  <li><span class="dot"></span>Wedge pump — nude espadrille</li>
+  <li><span class="dot"></span>Slingback kitten heel — grey-blue tweed</li>
+  <li><span class="dot"></span>Block-heel sandal — black suede<span class="tagm">Simply Vera</span></li>
+  <li><span class="dot"></span>Strappy platform — black suede<span class="tagm">Simply Vera</span></li>
+  <li><span class="dot"></span>Strappy heels — silver, rhinestone banding</li>
+  <li><span class="dot"></span>Slide — silver, floral-tooled sole<span class="tagm">Brazil</span></li>
+  <li><span class="dot"></span>Thong sandal — pewter, braided strap</li>
+</ul>
+
+<div class="band"><h2>Sandals &amp; Slides</h2><span class="line"></span><span class="n">10</span></div>
+<ul class="list">
+  <li><span class="dot"></span>Buckle clogs — brown suede<span class="tagm">Footbeds</span></li>
+  <li><span class="dot"></span>Espadrille slides — grey chambray, gold button</li>
+  <li><span class="dot"></span>Slides — blush suede, floral-print footbed</li>
+  <li><span class="dot"></span>Slide — tan, silver beading, coloured pom</li>
+  <li><span class="dot"></span>Ankle-strap wedge — camel, wood-stacked heel</li>
+  <li><span class="dot"></span>Slide — white &amp; tan, cork wedge<span class="tagm">MIA</span></li>
+  <li><span class="dot"></span>Espadrille wedge — white, strappy</li>
+  <li><span class="dot"></span>Flip-flops — ivory &amp; gold<span class="tagm">Havaianas</span></li>
+  <li><span class="dot"></span>Thong wedge — rose gold<span class="tagm">Old Navy</span></li>
+  <li><span class="dot"></span>Wedge slide — glitter, cork</li>
+</ul>
+
+<div class="band"><h2>Contact sheet</h2><span class="line"></span><span class="n">18 shots</span></div>
+<ul class="grid" id="sheet"></ul>
+
+<footer>
+  <div class="caveat">
+    A snapshot generated from Notion, not the record itself. If it disagrees with
+    <a href="https://app.notion.com/3da81e12708b8184b7e7e3caf14b7845">CTR-025</a>, Notion wins.
+    Nothing here is graded — the photos show scuffed soles, grubby canvas and worn heels, and no pair
+    has been assessed in hand. Re-grade before anything is listed. Counts are read off overlapping
+    photos and are approximate.
+  </div>
+  <div>Photographed 13 Sep 2026 · Source of truth: <a href="https://app.notion.com/3da81e12708b8184b7e7e3caf14b7845">Inventory — Containers / CTR-025</a></div>
+</footer>
+</div>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button id="lbx" type="button">Close ✕</button>
+  <div class="lbin">
+    <img id="lbimg" alt="">
+    <div class="lbcap" id="lbcap"></div>
+    <div class="lbnav">
+      <button id="lbprev" type="button">← Prev</button>
+      <button id="lbnext" type="button">Next →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var SHOTS = ["IMG_2517","IMG_2518","IMG_2519","IMG_2520","IMG_2521","IMG_2522","IMG_2523","IMG_2524","IMG_2525","IMG_2526","IMG_2527","IMG_2528","IMG_2529","IMG_2530","IMG_2531","IMG_2532","IMG_2533","IMG_2534"];
+  var host = document.getElementById("sheet");
+  var idx = 0;
+  SHOTS.forEach(function(name, i){
+    var li = document.createElement("li");
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "shot";
+    b.setAttribute("aria-label", "Enlarge " + name);
+    var im = document.createElement("img");
+    im.src = "photos/" + name + ".jpg";
+    im.alt = "Bin 12 contents, frame " + (i+1);
+    im.loading = "lazy"; im.decoding = "async";
+    var fn = document.createElement("span");
+    fn.className = "fn"; fn.textContent = name;
+    b.appendChild(im); b.appendChild(fn);
+    b.addEventListener("click", function(){ open(i); });
+    li.appendChild(b);
+    host.appendChild(li);
+  });
+  var lb = document.getElementById("lb"),
+      lbimg = document.getElementById("lbimg"),
+      lbcap = document.getElementById("lbcap");
+  function open(i){
+    idx = (i + SHOTS.length) % SHOTS.length;
+    lbimg.src = "photos/" + SHOTS[idx] + ".jpg";
+    lbimg.alt = "Bin 12 contents, frame " + (idx+1);
+    lbcap.innerHTML = "<b>" + SHOTS[idx] + "</b>" + (idx+1) + " of " + SHOTS.length;
+    lb.classList.add("on");
+    document.body.style.overflow = "hidden";
+  }
+  function close(){ lb.classList.remove("on"); document.body.style.overflow = ""; }
+  document.getElementById("lbx").addEventListener("click", close);
+  document.getElementById("lbprev").addEventListener("click", function(e){ e.stopPropagation(); open(idx-1); });
+  document.getElementById("lbnext").addEventListener("click", function(e){ e.stopPropagation(); open(idx+1); });
+  lb.addEventListener("click", function(e){ if (e.target === lb) close(); });
+  document.addEventListener("keydown", function(e){
+    if (!lb.classList.contains("on")) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowLeft") open(idx-1);
+    else if (e.key === "ArrowRight") open(idx+1);
+  });
+})();
+</script>
+</body></html>
