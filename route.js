@@ -15,8 +15,8 @@
   null
  ],
  "g-gibson-90f6c5": [
-  "GIBSON",
-  "DSM Songmaker · G-002 · bridge reglue",
+  "SHERYL",
+  "Gibson DSM Songmaker · G-002 · bridge reglue",
   "/i/G-002",
   "https://www.notion.so/3fa81e12708b8155b560cde2c7f1192f"
  ],
@@ -33,26 +33,26 @@
   "https://www.notion.so/35081e12708b81aa9547f3f4f8dadd85"
  ],
  "g-jmascis-5c0aa5": [
-  "J MASCIS",
+  "JAY",
   "Squier J Mascis Jazzmaster · OSW-02",
   "/i/OSW-02",
   "https://www.notion.so/3f281e12708b81edba14cb64ebe02450"
  ],
  "g-bass-0cdbf6": [
-  "BASS",
+  "BASS 001",
   "Ktaxon 4-string · Brown Sunburst · customise + sell",
   "/b/3fb81e12708b81aa87d3c8e77d1a9c66",
   "https://www.notion.so/3fb81e12708b81aa87d3c8e77d1a9c66"
  ],
  "g-fistrock-b2c915": [
-  "FISTROCK JM",
+  "FISTROCK",
   "Fistrock JM kit · F1 printed guard",
   "/b/3f381e12708b81bab0adc3cdd16ae059",
   "https://www.notion.so/3f381e12708b81bab0adc3cdd16ae059"
  ],
  "g-pinejm-120cf2": [
-  "JMI JAZZMASTER",
-  "JMI body · pine · Jazzmaster partscaster",
+  "PINEMASTER 001",
+  "JMI pine body · Jazzmaster partscaster",
   "/b/3e781e12708b8131ac27e023db568007",
   "https://www.notion.so/3e781e12708b8131ac27e023db568007"
  ],
